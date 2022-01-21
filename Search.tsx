@@ -171,13 +171,6 @@ export const Search = () => {
     topicsValue,
     ArrayParam
   );
-  console.log("hook", useFilterFromQuery("topics", topicsValue, ArrayParam));
-  console.log(
-    `topicsValue,
-  ArrayParam`,
-    topicsValue,
-    ArrayParam
-  );
   const [ranges, setRanges] = useFilterFromQuery(
     "ranges",
     rangesValue,
@@ -209,7 +202,6 @@ export const Search = () => {
     }
   };
   const queryArr = () => {
-    console.log("topics 654321", topics);
     const stringQuery = [
       ...getString(topics, "topics"),
       ...getString(ranges, "ranges"),
